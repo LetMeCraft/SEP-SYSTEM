@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body { background-color: #f9fafb; 
+ font-family: 'Inter', sans-serif;
+}
+.container { max-width: 1024px; }
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-in-out;
+}
