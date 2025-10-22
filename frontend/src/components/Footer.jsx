@@ -8,7 +8,7 @@ export default function Footer() {
       <div className=" mx-auto flex  justify-between items-center px-8 py-0">
         {/* Brand / Logo */}
         <Link
-          to="/"
+          to="/About"
           className="text-2xl md:text-3xl font-extrabold text-white tracking-tight hover:scale-105 transition-transform"
         >
           Sepsis<span className="text-blue-400">Predict</span>
