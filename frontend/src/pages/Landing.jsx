@@ -13,7 +13,7 @@ export default function Landing() {
         transition={{ duration: 0.8 }}
       >
         {/* Left Text */}
-        <div className="md:w-1/2 space-y-6 text-center md:text-center">
+        <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <h2 className="text-5xl md:text-6xl font-extrabold leading-tight text-blue-800">
             Detect <span className="text-blue-500">Sepsis Early</span> with AI
           </h2>
@@ -21,17 +21,19 @@ export default function Landing() {
             Leverage AI-powered analytics to predict early signs of sepsis 
             using vital signs and lab data — securely stored in your personalized dashboard.
           </p>
-
-          <div className="flex justify-center md:justify-start gap-4 mt-6">
-            <Link to="/auth">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg">
-                Get Started - Free
-              </button>
-            </Link>
-          </div>
         </div>
 
-       
+        {/* Right Side: Quote + Button */}
+        <div className="md:w-1/2 flex flex-col items-center md:items-end space-y-6">
+          <p className="italic text-gray-700 text-lg md:text-xl text-center md:text-right max-w-md">
+            “Early detection saves lives — empower clinicians with intelligent insights.”
+          </p>
+          <Link to="/auth">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow-lg hover:scale-105">
+              Get Started 
+            </button>
+          </Link>
+        </div>
       </motion.section>
 
       {/* Stats Section */}
