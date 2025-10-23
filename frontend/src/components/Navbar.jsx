@@ -34,9 +34,17 @@ export default function Navbar() {
               Home
             </Link>
 
-            <a href="#about" className="hover:text-blue-600 text-gray-700">
+            {/* ✅ FIXED: Replaced <a href="#about"> with proper Link */}
+            <Link
+              to="/about"
+              className={`hover:text-blue-600 ${
+                location.pathname === "/about"
+                  ? "text-blue-600"
+                  : "text-gray-700"
+              }`}
+            >
               About
-            </a>
+            </Link>
 
             <Link
               to="/profile"
